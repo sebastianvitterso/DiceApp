@@ -1,9 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableHighlight } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableHighlight, TouchableOpacity } from 'react-native';
 
 class ShowDice extends React.Component {
   constructor(props){
     super(props);
+    console.log("Tjohei nummer: "+this.props.num)
     this.state={
       num: this.props.num,
     };
@@ -17,8 +18,8 @@ class ShowDice extends React.Component {
       require('./assets/Dice5.png'),
       require('./assets/Dice6.png'),
     ];
-    var currentChoice = images[this.state.num - 1];
-    console.log("rendering ShowDice: num is " + this.state.num)
+    var currentChoice = images[this.props.num - 1];
+    console.log("rendering ShowDice: num is " + this.state.num + ", props.num is " + this.props.num)
     return (<View>
       <Image style={styles.diceImage} source={currentChoice} />
     </View>);
@@ -86,10 +87,9 @@ export default class DiceFrame extends React.Component {
     else{
       return (
         <View style={styles.container}>
-          <TouchableHighlight onPress={() => this.startRoll()}> 
+          <TouchableOpacity onPressIn={() => this.startRoll()}> 
             <ShowDice num={this.state.myNum}/>
-          </TouchableHighlight>
-          <Text style={styles.paragraph}>{this.PartyMan}</Text>
+          </TouchableOpacity>
         </View>
     );
     }
