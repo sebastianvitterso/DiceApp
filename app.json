@@ -24,7 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "net.vitterso.diceapp"
+      "bundleIdentifier": "net.vitterso.diceapp",
+      "icon": "./assets/icon167.jpg"
     },
     "android": {
       "package": "net.vitterso.diceapp",
