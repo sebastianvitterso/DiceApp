@@ -23,7 +23,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "net.vitterso.diceapp"
     },
     "android": {
       "package": "net.vitterso.diceapp",

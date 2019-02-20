@@ -14,5 +14,18 @@
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
   },
-  "private": true
+  "private": true,
+  "name": "diceapp",
+  "description": "Simple Dice App for Android and iOS made in ReactNative",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianvitterso/DiceApp.git"
+  },
+  "author": "seb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastianvitterso/DiceApp/issues"
+  },
+  "homepage": "https://github.com/sebastianvitterso/DiceApp#readme"
 }
