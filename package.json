@@ -17,7 +17,7 @@
   "private": true,
   "name": "diceapp",
   "description": "Simple Dice App for Android and iOS made in ReactNative",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sebastianvitterso/DiceApp.git"
