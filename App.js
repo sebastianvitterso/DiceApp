@@ -44,7 +44,7 @@ export default class App extends React.Component {
         <Slider 
           style={styles.slider}
           step={1}
-          minimumValue={1}
+          minimumValue={0}
           maximumValue={6}
           thumbTintColor='#000'
           maximumTrackTintColor='#999'  
